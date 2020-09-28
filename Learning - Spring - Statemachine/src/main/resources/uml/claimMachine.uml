@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_sLgZILzhEeq5luhMPU93FA" name="claimMachine">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_sMi68LzhEeq5luhMPU93FA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_sLnt4LzhEeq5luhMPU93FA" name="claimMachine">
+    <region xmi:type="uml:Region" xmi:id="_sLqxMLzhEeq5luhMPU93FA" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_zqIG0LzhEeq5luhMPU93FA" source="_taFFELzhEeq5luhMPU93FA" target="_vdo4QLzhEeq5luhMPU93FA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fQuIQLziEeq5luhMPU93FA" source="_vdo4QLzhEeq5luhMPU93FA" target="_TygYgLziEeq5luhMPU93FA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_g0Yd8LzjEeq5luhMPU93FA" name="REPORT_APPLICATION" event="_HU6Z8LzjEeq5luhMPU93FA"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_pfbisL0IEeq5luhMPU93FA" source="_TygYgLziEeq5luhMPU93FA" target="_kTb-8L0IEeq5luhMPU93FA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_wTGO4L0IEeq5luhMPU93FA" name="REGISTER_APPLICATION_TEMP_SAVE" event="_V1_d8L0IEeq5luhMPU93FA"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_8tZMYL0IEeq5luhMPU93FA" source="_kTb-8L0IEeq5luhMPU93FA" target="_3ndNUL0IEeq5luhMPU93FA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_F3uN8L0JEeq5luhMPU93FA" name="REGISTER_APPLICATION" event="_dKEvkL0IEeq5luhMPU93FA"/>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_taFFELzhEeq5luhMPU93FA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vdo4QLzhEeq5luhMPU93FA" name="IN_REPORTING"/>
+      <subvertex xmi:type="uml:State" xmi:id="_TygYgLziEeq5luhMPU93FA" name="REPORTED"/>
+      <subvertex xmi:type="uml:State" xmi:id="_kTb-8L0IEeq5luhMPU93FA" name="IN_REGISTERING"/>
+      <subvertex xmi:type="uml:State" xmi:id="_3ndNUL0IEeq5luhMPU93FA" name="REGISTERED"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_0iljYLziEeq5luhMPU93FA" name="REPORT_APPLICATION"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_HU6Z8LzjEeq5luhMPU93FA" name="SE_REPORT_APPLICATION" signal="_0iljYLziEeq5luhMPU93FA"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_Pak5sL0IEeq5luhMPU93FA" name="REGISTER_APPLICATION_TEMP_SAVE"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_V1_d8L0IEeq5luhMPU93FA" name="SE_REGISTER_APPLICATION_TEMP_SAVE" signal="_Pak5sL0IEeq5luhMPU93FA"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_YbxNYL0IEeq5luhMPU93FA" name="REGISTER_APPLICATION"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_dKEvkL0IEeq5luhMPU93FA" name="SE_REGISTER_APPLICATION" signal="_YbxNYL0IEeq5luhMPU93FA"/>
+  <packagedElement xmi:type="uml:FunctionBehavior" xmi:id="_eWoh8L0LEeq5luhMPU93FA" name="FunctionBehavior9" visibility="private">
+    <language>JAVA</language>
+    <body></body>
+  </packagedElement>
+</uml:Model>
