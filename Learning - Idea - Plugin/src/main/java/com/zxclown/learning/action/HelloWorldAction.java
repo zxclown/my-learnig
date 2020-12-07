@@ -5,8 +5,8 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.ui.Messages;
 import com.intellij.psi.PsiFile;
+import com.zxclown.learning.ui.HelloWorldDialog;
 
 /**
  * HelloWorldAction
@@ -28,7 +28,11 @@ public class HelloWorldAction extends AnAction {
         String title = "Hello World!";
 
         //显示对话框
-        Messages.showMessageDialog(project, classPath, title, Messages.getInformationIcon());
+//        Messages.showMessageDialog(project, classPath, title, Messages.getInformationIcon());
+        HelloWorldDialog dialog = new HelloWorldDialog();
+        dialog.setLocationRelativeTo(dialog);//居中
+        dialog.pack();
+        dialog.setVisible(true);
 
     }
 }
