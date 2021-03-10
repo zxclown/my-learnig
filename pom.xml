@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.zxclown.learning</groupId>
-    <artifactId>my-Learning</artifactId>
+    <artifactId>Learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>Learning - NIO</module>
-        <module>Learning - Functional</module>
-        <module>Learning - Disruptor</module>
-        <module>Learning - Netty</module>
-        <module>Learning - Spring - Statemachine</module>
-        <module>Learning - Groovy</module>
-        <module>Learning - AKKA</module>
+        <module>Learning-NIO</module>
+        <module>Learning-Functional</module>
+        <module>Learning-Disruptor</module>
+        <module>Learning-Netty</module>
+        <module>Learning-Spring-Statemachine</module>
+        <module>Learning-Groovy</module>
+        <module>Learning-AKKA</module>
     </modules>
     <packaging>pom</packaging>
 

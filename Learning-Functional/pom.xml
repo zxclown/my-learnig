@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Functional-learning</artifactId>
+    <artifactId>Learning-Functional</artifactId>
 
     <dependencies>
         <dependency>
